@@ -1,15 +1,10 @@
 import { NavLink } from "react-router-dom";
 
 export function Navbar({ siteTitle = "React Master", currentVersion = "v1.0" }) {
-  const navItems = [
-    { path: "/", label: "🏠 Home" },
-    { path: "/props", label: "📦 Props Practice" },
-    { path: "/hooks", label: "⚓ Hooks Practice" },
-    { path: "/routes", label: "🧭 Routes Practice" },
-  ];
+ 
 
   return (
-    <header className="bg-slate-900/80 backdrop-blur-md border-b border-white/10 text-white p-4 sticky top-0 z-50">
+    <header className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-white/10 text-white p-4 z-50">
       <div className="w-full mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Title passed via Props */}
         <div className="flex items-center gap-3">
@@ -36,24 +31,7 @@ export function Navbar({ siteTitle = "React Master", currentVersion = "v1.0" }) 
         </div>
 
         {/* Route Links */}
-        <nav className="flex flex-wrap items-center justify-center gap-2 text-sm font-medium">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              end={item.path === "/"}
-              className={({ isActive }) =>
-                `px-4 py-2 rounded-full transition-all duration-300 ease-out ${
-                  isActive
-                    ? "bg-indigo-500 text-white shadow-[0_0_15px_rgba(99,102,241,0.4)]"
-                    : "bg-transparent text-slate-300 hover:bg-white/5 hover:text-white"
-                }`
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
-        </nav>
+        
       </div>
     </header>
   );
