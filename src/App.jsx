@@ -15,7 +15,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
-        <Navbar siteTitle={appConfig.siteTitle} currentVersion={appConfig.version} />
+        <Navbar siteTitle={appConfig.siteTitle} />
 
         <main className="flex-1 w-full pt-[90px]">
           <Routes>

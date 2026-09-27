@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 
-export function ProductDetail() {
-  const { id } = useParams();
+export function ProductDetail({ id: propId }) {
+  const { id: paramId } = useParams();
+  const id = propId || paramId;
 
   const productInfo = {
     props: {

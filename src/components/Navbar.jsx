@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export function Navbar({ siteTitle = "React Master", currentVersion = "v1.0" }) {
+export function Navbar({ siteTitle = "React Master" }) {
  
 
   return (
@@ -11,9 +11,7 @@ export function Navbar({ siteTitle = "React Master", currentVersion = "v1.0" }) 
           <span className="font-extrabold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">
             {siteTitle}
           </span>
-          <span className="text-xs px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-mono shadow-inner shadow-indigo-500/10">
-            {currentVersion}
-          </span>
+          
         </div>
 
         {/* Search Input */}
