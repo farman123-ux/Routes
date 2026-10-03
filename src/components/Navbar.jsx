@@ -4,17 +4,14 @@ export function Navbar({ siteTitle = "React Master" }) {
  
 
   return (
-    <header className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-white/10 text-white p-4 z-50">
+    <header className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-white/10 text-white p-4 0">
       <div className="w-full mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-        {/* Title passed via Props */}
         <div className="flex items-center gap-3">
           <span className="font-extrabold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">
             {siteTitle}
           </span>
-          
         </div>
 
-        {/* Search Input */}
         <div className="relative w-full sm:max-w-xs group">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-indigo-400 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -27,9 +24,6 @@ export function Navbar({ siteTitle = "React Master" }) {
             className="w-full bg-slate-800/50 border border-slate-700/50 rounded-full pl-10 pr-4 py-2 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:bg-slate-800 transition-all shadow-inner"
           />
         </div>
-
-        {/* Route Links */}
-        
       </div>
     </header>
   );

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export function Home({ appTitle = "React Learning Hub", learningGoal = "Master Props, Hooks & Routes" }) {
   return (
+    
     <div className="flex flex-col space-y-24 pb-20 w-full overflow-hidden">
-      {/* Hero Section */}
       <section className="relative px-6 sm:px-12 py-20 w-full flex flex-col items-center text-center">
         <div className="absolute inset-0 top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-500/20 blur-[120px] rounded-full pointer-events-none"></div>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8 z-10">
@@ -28,7 +28,6 @@ export function Home({ appTitle = "React Learning Hub", learningGoal = "Master P
         </div>
       </section>
 
-      {/* Product / Understand The Route Section */}
       <section id="product" className="px-6 sm:px-12 w-full">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">React Learning Hub: Props, Hooks & Routes</h2>
@@ -36,7 +35,6 @@ export function Home({ appTitle = "React Learning Hub", learningGoal = "Master P
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Feature 1: Props */}
           <Link to="/product/props" className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-emerald-500/50 p-8 rounded-3xl transition-all duration-500 relative overflow-hidden block">            
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors">React Props</h3>
             <p className="text-slate-400 leading-relaxed text-sm">
@@ -44,7 +42,6 @@ export function Home({ appTitle = "React Learning Hub", learningGoal = "Master P
             </p>
           </Link>
 
-          {/* Feature 2: Hooks */}
           <Link to="/product/hooks" className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-purple-500/50 p-8 rounded-3xl transition-all duration-500 relative overflow-hidden block">
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">React Hooks</h3>
             <p className="text-slate-400 leading-relaxed text-sm">
@@ -52,7 +49,6 @@ export function Home({ appTitle = "React Learning Hub", learningGoal = "Master P
             </p>
           </Link>
 
-          {/* Feature 3: Routes */}
           <Link to="/product/routes" className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-500 relative overflow-hidden block">
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">React Router</h3>
             <p className="text-slate-400 leading-relaxed text-sm">

@@ -19,31 +19,11 @@ export default function App() {
 
         <main className="flex-1 w-full pt-[90px]">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <Home
-                  learningGoal="Master React Router"
-                />
-              }
-            />
-            
+            <Route path="/" element={<Home learningGoal="Master React Router" />}/>
             <Route path="/product/:id" element={<ProductDetail />} />
-            
-            <Route 
-              path="/props" 
-              element={<ProductDetail id="props" />} 
-            />
-            
-            <Route 
-              path="/hooks" 
-              element={<ProductDetail id="hooks" />} 
-            />
-            
-            <Route 
-              path="/routes" 
-              element={<ProductDetail id="routes" />}
-            />
+            <Route path="/props" element={<ProductDetail id="props" />} />
+            <Route path="/hooks" element={<ProductDetail id="hooks" />} />
+            <Route path="/routes" element={<ProductDetail id="routes" />}/>
           </Routes>
         </main>
 
